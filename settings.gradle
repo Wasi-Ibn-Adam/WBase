@@ -1,0 +1,3 @@
+rootProject.name = "Base Testing"
+include ':app'
+include ':wall'
