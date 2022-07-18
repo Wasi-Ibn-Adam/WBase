@@ -7,10 +7,14 @@
     <color name="bg_tint_dark">#3C1B1133</color>
     <color name="bg_tint_light">#CCFFFFFF</color>
 
+    <color name="pop_up_bg">#818080</color>
 
     <color name="toolbar_dark">#000000</color>
 
     <color name="input_l">#DC9C96A6</color>
+
+    <color name="transparent">#FFFFFFFF</color>
+
 
     <color name="fab_l">#2A282C</color>
     <color name="fab_d">#F8F5F5</color>
