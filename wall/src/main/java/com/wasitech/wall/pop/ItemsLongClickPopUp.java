@@ -31,6 +31,7 @@ public class ItemsLongClickPopUp extends ThemePopUp {
         super(context, R.layout.pop_up_item_long_click, new Fade(Fade.IN), new Fade(Fade.OUT));
         layout = getContentView().findViewById(R.id._pop_bg);
         init(context, actions);
+        extra();
     }
 
     private void init(Context context) {
@@ -46,7 +47,7 @@ public class ItemsLongClickPopUp extends ThemePopUp {
         delete.setOnClickListener(v -> OnDelete());
         action.setOnClickListener(v -> OnAction());
         detail.setOnClickListener(v -> OnDetail());
-
+        
     }
 
     private void init(Context context, int[] actions) {
@@ -93,7 +94,8 @@ public class ItemsLongClickPopUp extends ThemePopUp {
         dismiss();
     }
 
-    private int setActionImg() {
+    protected int setActionImg() {
         return 0;
     }
+    protected void extra() {}
 }
