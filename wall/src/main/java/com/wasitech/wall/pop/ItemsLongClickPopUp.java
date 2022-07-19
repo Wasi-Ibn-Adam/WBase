@@ -98,10 +98,5 @@ public class ItemsLongClickPopUp extends ThemePopUp {
     protected int setActionImg() {
         return 0;
     }
-<<<<<<< HEAD
-
     protected void extra(){}
-=======
-    protected void extra() {}
->>>>>>> fbb0fc02a300af693ca72dc7ae9d1be5580bed5a
 }
