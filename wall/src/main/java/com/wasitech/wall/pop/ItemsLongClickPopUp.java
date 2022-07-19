@@ -48,7 +48,7 @@ public class ItemsLongClickPopUp extends ThemePopUp {
         delete.setOnClickListener(v -> OnDelete());
         action.setOnClickListener(v -> OnAction());
         detail.setOnClickListener(v -> OnDetail());
-
+        
     }
 
     private void init(Context context, int[] actions) {
@@ -98,6 +98,10 @@ public class ItemsLongClickPopUp extends ThemePopUp {
     protected int setActionImg() {
         return 0;
     }
+<<<<<<< HEAD
 
     protected void extra(){}
+=======
+    protected void extra() {}
+>>>>>>> fbb0fc02a300af693ca72dc7ae9d1be5580bed5a
 }
