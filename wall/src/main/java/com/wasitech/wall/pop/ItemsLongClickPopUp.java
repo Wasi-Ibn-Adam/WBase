@@ -18,8 +18,9 @@ public class ItemsLongClickPopUp extends ThemePopUp {
      * share, cancel, delete, action, detail;
      */
     public ItemsLongClickPopUp(Context context) {
-        super(context, R.layout.pop_up_item_long_click, new Fade(Fade.IN), new Fade(Fade.OUT));
+        super(context, R.layout.pop_lay_long_click, new Fade(Fade.IN), new Fade(Fade.OUT));
         init(context);
+        extra();
     }
 
     /**
@@ -28,9 +29,10 @@ public class ItemsLongClickPopUp extends ThemePopUp {
      * @implNote provide custom action list
      */
     public ItemsLongClickPopUp(Context context, int[] actions) {
-        super(context, R.layout.pop_up_item_long_click, new Fade(Fade.IN), new Fade(Fade.OUT));
+        super(context, R.layout.pop_lay_long_click, new Fade(Fade.IN), new Fade(Fade.OUT));
         layout = getContentView().findViewById(R.id._pop_bg);
         init(context, actions);
+        extra();
     }
 
     private void init(Context context) {
@@ -93,7 +95,9 @@ public class ItemsLongClickPopUp extends ThemePopUp {
         dismiss();
     }
 
-    private int setActionImg() {
+    protected int setActionImg() {
         return 0;
     }
+
+    protected void extra(){}
 }
